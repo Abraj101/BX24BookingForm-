@@ -1,15 +1,16 @@
 {
   "name": "southlofts-booking-form",
   "version": "0.1.0",
-  "description": "South Lofts booking form — HTML/CSS replica rendered by Node/Express from JSON (Bitrix24-fed later).",
+  "description": "South Lofts booking form rendered by Node/Express from JSON.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "puppeteer": "^25.1.0"
+    "express": "^4.19.2"
   }
 }
