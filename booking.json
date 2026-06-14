@@ -1,0 +1,101 @@
+{
+  "_comment": "DYNAMIC data — changes per booking. Today these are hard-coded from the sample PDF. LATER each value will be pulled from a Bitrix24 field. The 'bitrixFieldId' keys are placeholders for you to fill in when you share the field IDs.",
+
+  "bitrixFieldMap": {
+    "bookingFormNo": "UF_CRM_XXXX",
+    "date": "UF_CRM_XXXX",
+    "building": "UF_CRM_XXXX",
+    "unit": "UF_CRM_XXXX",
+    "type": "UF_CRM_XXXX",
+    "totalArea": "UF_CRM_XXXX",
+    "purchasePrice": "UF_CRM_XXXX",
+    "deposit": "UF_CRM_XXXX",
+    "discountPercentage": "UF_CRM_XXXX",
+    "purchaser1.name": "UF_CRM_XXXX",
+    "purchaser1.licenseNo": "UF_CRM_XXXX",
+    "purchaser1.countryOfIncorporation": "UF_CRM_XXXX",
+    "purchaser1.nationality": "UF_CRM_XXXX",
+    "purchaser1.passportNo": "UF_CRM_XXXX",
+    "purchaser1.poBox": "UF_CRM_XXXX",
+    "purchaser1.city": "UF_CRM_XXXX",
+    "purchaser1.country": "UF_CRM_XXXX",
+    "purchaser1.address": "UF_CRM_XXXX",
+    "purchaser1.mobile": "UF_CRM_XXXX",
+    "purchaser1.telephone": "UF_CRM_XXXX",
+    "purchaser1.email": "UF_CRM_XXXX",
+    "agency.name": "UF_CRM_XXXX",
+    "agency.representativeName": "UF_CRM_XXXX"
+  },
+
+  "bookingFormNo": "35--16",
+  "date": "16/05/2026",
+  "building": "South Lofts 1",
+  "unit": "SL 1 - 104",
+  "type": "A (Flex 1 BHK - Optional Pvt Pool)",
+  "totalArea": "522.16",
+  "purchasePrice": 899002.87,
+  "deposit": "",
+
+  "discountPercentage": 5,
+
+  "purchaser1": {
+    "name": "Saqib Bhatti",
+    "licenseNo": "123",
+    "countryOfIncorporation": "Pakistan",
+    "nationality": "Emirati",
+    "passportNo": "321",
+    "poBox": "46000",
+    "city": "dubai",
+    "country": "Dubai",
+    "address": "ABCD",
+    "mobile": "12345678",
+    "telephone": "51455",
+    "email": "saqibbhatti@gmail.com"
+  },
+
+  "purchaser2": {
+    "name": "",
+    "licenseNo": "",
+    "countryOfIncorporation": "",
+    "nationality": "",
+    "passportNo": "",
+    "poBox": "",
+    "city": "",
+    "country": "",
+    "address": "",
+    "mobile": "",
+    "telephone": "",
+    "email": ""
+  },
+
+  "agency": {
+    "assistedByAgent": "",
+    "name": "",
+    "representativeName": ""
+  },
+
+  "_installmentScheduleComment": "This is the payment-schedule TEMPLATE (labels + % + due dates). For now amounts are copied from the PDF so the table renders. In phase 2, Node will COMPUTE 'amount' from the percentage and the relevant base (net payable for installments, purchase price for DLD, flat for admin).",
+  "installmentSchedule": [
+    { "label": "Booking Amount",  "percentLabel": "20%",      "base": "netPayable",    "percent": 20, "amount": 170810.55, "date": "16/05/2026" },
+    { "label": "DLD Fee",         "percentLabel": "4%",       "base": "purchasePrice", "percent": 4,  "amount": 35960.11,  "date": "16/05/2026" },
+    { "label": "Admin Fee",       "percentLabel": "Flat Fee", "base": "flat",          "amount": 5250,      "date": "16/05/2026" },
+    { "label": "1st Installment", "percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/10/2026" },
+    { "label": "2nd Installment", "percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/02/2027" },
+    { "label": "3rd Installment", "percentLabel": "10%",      "base": "netPayable",    "percent": 10, "amount": 85405.27,  "date": "16/06/2027" },
+    { "label": "4th Installment", "percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/10/2027" },
+    { "label": "5th Installment", "percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/02/2028" },
+    { "label": "6th Installment", "percentLabel": "10%",      "base": "netPayable",    "percent": 10, "amount": 85405.27,  "date": "16/05/2028" },
+    { "label": "7th Installment", "percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/08/2028" },
+    { "label": "8th Installment", "percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/11/2028" },
+    { "label": "9th Installment", "percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/02/2029" },
+    { "label": "10th Installment","percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/05/2029" },
+    { "label": "11th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/09/2029" },
+    { "label": "12th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/11/2029" },
+    { "label": "13th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/02/2030" },
+    { "label": "14th Installment","percentLabel": "5%",       "base": "netPayable",    "percent": 5,  "amount": 42702.64,  "date": "16/05/2030" },
+    { "label": "15th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/08/2030" },
+    { "label": "16th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/11/2030" },
+    { "label": "17th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/02/2031" },
+    { "label": "18th Installment","percentLabel": "3%",       "base": "netPayable",    "percent": 3,  "amount": 25621.59,  "date": "16/05/2031" }
+  ]
+}

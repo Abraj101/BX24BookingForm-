@@ -1,0 +1,64 @@
+{
+  "_comment": "STATIC data — identical for every booking of this project. Edit here, not per-booking. Bitrix24 does NOT feed these.",
+
+  "brand": {
+    "developerName": "Premier Choice",
+    "developerTagline": "INTERNATIONAL REAL ESTATE DEVELOPERS",
+    "projectName": "Southlofts",
+    "projectTagline": "ELEVATED CO-LIVING"
+  },
+
+  "vendor": "PCI Real Estate Developers LLC",
+  "project": "South Lofts by Premier Choice",
+  "location": "Plot 43, Saih Shuaib 2, Dubai",
+
+  "currency": "AED",
+
+  "noteAndWarning": "The above address/contact details are considered the Purchaser's primary address and chosen domicile and shall be printed on the Vendor's Sales and Purchase Agreement. Such contact details including email and mobile number shall be used i) for all communications/correspondences with the Purchaser and ii) to transact with the Vendor on digital channels like websites and applications. Sharing your contact details information and/or passwords with others may give them access to your personal information as well as the possibility to transact with the Vendor in your name and on your behalf.",
+
+  "termsAndConditions": [
+    "This unconditional and irrevocable Offer to Purchase the Property is made by the abovementioned purchaser(s) (the \u201cPurchaser\u201d) to the Vendor and is binding on the Purchaser. The sale of the Property is subject to approval by the Vendor as per Clause (3) below.",
+    "The Purchaser unconditionally, irrevocably and finally agrees to purchase the Property from the Vendor at the above Purchase Price, in accordance with the below Payment Schedule. For clarity, the Purchaser acknowledges that, if required by the Vendor or relevant authorities, a subsequent sales and purchase agreement may be requested to be signed to complete formalities which shall be complied with within a period of One (1) Week from the Vendor raising such request.",
+    "If the Purchaser fails to respond to any calls or email communications or is otherwise in breach of Purchaser's obligations under this Offer to Purchase within a period of sixty (60) days from the date of signing, the Purchaser shall be in default of this agreement.",
+    "The Vendor shall be entitled not to proceed with the sale of the Property and may terminate this Offer to Purchase without the need to disclose a reason, without legal proceedings or court judgment, and without any liability. In case of such termination, the Purchaser shall forfeit the Deposit to the Vendor. The Purchaser waives any right to claim interest or compensation under any applicable laws.",
+    "The Purchaser shall provide complete and accurate contact information, as requested in this Offer to Purchase, and submit it to the Vendor on signing.",
+    "The Purchaser shall pay the Deposit by a payment method acceptable to the Vendor on the date of signing (or any other date specified by the Vendor). The Vendor may request the Purchaser to pay the Deposit through multiple means of payment. Except in case of termination by the Vendor under Clause (4), the Deposit (or any portion thereof) is non-refundable for any reason.",
+    "In addition to the Purchase Price, the Purchaser agrees to pay all pre-registration/registration charges and any related amounts levied by the Land Department. Such charges may change, and the Purchaser undertakes to pay any revised amounts. The Purchase Price excludes all taxes, which shall be borne by the Purchaser.",
+    "If any cheque issued by the Purchaser is dishonored, or if pre-registration/registration charges or the Deposit are not paid in a timely manner, the Vendor may immediately terminate this Offer to Purchase without notice or further proceedings. Any amounts received pursuant to this Offer to Purchase shall be forfeited. This termination is without prejudice to the Vendor's right to recover the full Deposit amount and/or cheque value, or any additional compensation. The Vendor may allow replacement of the cheque or extension of payment deadlines at its discretion.",
+    "All payments must be made in UAE Dirham (AED). If payment is made in another currency, credit to the Purchaser's account will be based on the amount realized in AED. Any shortfall or surplus due to exchange rate differences shall be adjusted against future installments.",
+    "This Offer to Purchase constitutes a binding and enforceable contract on the Purchaser for the purchase of the Property. A copy of any additional terms or documents made available to the Purchaser prior to signing shall apply where relevant. This Offer to Purchase is not transferable or assignable.",
+    "If handover of the Property occurs before the Purchase Price is paid in full, the Purchaser shall provide acceptable means of payment for the outstanding balance in the form of UAE-bank cheques. Possession shall only be granted upon full payment.",
+    "The Purchaser confirms full compliance with all laws and requirements in relevant jurisdictions and confirms having obtained all necessary approvals to enter into and perform obligations under this Offer to Purchase and any related documents.",
+    "The Purchaser guarantees that all payments made under this Offer to Purchase are from legitimate sources and are not connected to any unlawful activity or money laundering.",
+    "The Purchaser authorizes the Vendor and its group companies to collect, store, transfer, and use the Purchaser's information for legitimate purposes. While reasonable security measures are employed, the Vendor cannot guarantee protection against misuse of information and bears no responsibility for such occurrences.",
+    "Without prejudice to the Vendor's rights, the Purchaser shall pay all costs incurred by the Vendor in connection with recovering payments due or enforcing the Vendor's rights, including legal fees, notary fees, and deregistration fees.",
+    "The Purchaser shall pay the service fees attributable to the Property. If the Purchaser fails to pay any installment of the Purchase Price or service fees on the due date, a late payment charge of one percent (1%) per day on all outstanding amounts shall apply.",
+    "The Purchaser shall comply with all master community declarations and project/building rules. Chilled water, air conditioning, and LPG must be obtained solely from the Vendor's designated service providers. No external systems may be installed and all related activities shall be in compliance with local regulations.",
+    "This Offer to Purchase shall be governed by the laws of Dubai and the federal laws of the UAE. Disputes shall be referred to Dubai Courts. DIFC laws and DIFC Courts do not apply.",
+    "All payments to the Vendor are exclusive of VAT. The Purchaser shall pay applicable VAT wherever required. Property sales in the UAE are generally not subject to VAT.",
+    "The Vendor may freely assign this Offer to Purchase, or any part of it, to any of its affiliates, subsidiaries, or joint-venture partners without the Purchaser's consent."
+  ],
+
+  "bankAccounts": {
+    "bookingAndInstallments": {
+      "intro": "Booking payment and all subsequent installments for the purchase of unit shall be made in favor of developer's (the seller/vendor) account i.e. PCI Real Estate Developers LLC, for which bank account details are mentioned below:",
+      "rows": [
+        { "label": "BANK", "value": "ABU DHABI ISLAMIC BANK (ADIB)" },
+        { "label": "ACCOUNT TITLE", "value": "PCI REAL ESTATE DEVELOPERS LLC" },
+        { "label": "ACCOUNT NO.", "value": "19039648" },
+        { "label": "IBAN NO", "value": "AE0900500000000019039648" },
+        { "label": "SWIFT CODE", "value": "ABDIAEAD" },
+        { "label": "BRANCH", "value": "DEIRA, DUBAI" }
+      ]
+    },
+    "dldAndAdminFee": {
+      "intro": "The 4% DLD fee and admin fee for the purchase of unit shall be made in favor of developer's (the seller/vendor) account i.e. PCI REAL ESTATE DEVELOPERS LLC, for which bank account details are mentioned below:",
+      "rows": [
+        { "label": "BANK", "value": "ABU DHABI COMMERCIAL BANK" },
+        { "label": "ACCOUNT TITLE", "value": "PCI REAL ESTATE DEVELOPERS LLC" },
+        { "label": "IBAN NO", "value": "AE770030010031001994462" },
+        { "label": "SWIFT CODE", "value": "ADCBAEAA" }
+      ]
+    }
+  }
+}

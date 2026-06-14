@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Form <%= d.bookingFormNo %></title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<%
+  // Reusable header band so it appears on every page (matches PDF).
+  function brandBar() { %>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="pc-mark">&#9650;</span>
+        <span class="pc-logo">
+          <span class="pc-main"><strong><%= s.brand.developerName.split(' ')[0] %></strong> <span class="thin"><%= s.brand.developerName.split(' ').slice(1).join(' ') %></span></span>
+          <span class="pc-sub"><%= s.brand.developerTagline %></span>
+        </span>
+      </div>
+      <div class="brand-right">
+        <div class="sl-main"><%= s.brand.projectName %><span class="leaf">&#127811;</span></div>
+        <div class="sl-sub"><%= s.brand.projectTagline %></div>
+      </div>
+    </div>
+<% } %>
+
+<!-- ===================== PAGE 1 ===================== -->
+<section class="page">
+  <% brandBar(); %>
+  <div class="content">
+    <h1 class="doc-title">BOOKING FORM</h1>
+
+    <div class="meta-line"><span class="k">Booking Form No.:</span> <%= d.bookingFormNo %></div>
+    <div class="meta-line"><span class="k">Date:</span> <%= d.date %></div>
+    <div class="meta-line"><span class="k">Vendor:</span> <%= s.vendor %></div>
+    <div class="meta-line"><span class="k">Project:</span> <%= s.project %></div>
+    <div class="meta-line"><span class="k">Location:</span> <%= s.location %></div>
+    <div class="meta-line"><span class="k">Building / Phase:</span> <%= d.building %></div>
+    <div class="meta-line"><span class="k">Unit:</span> <%= d.unit %></div>
+    <div class="meta-line"><span class="k">Type:</span> <%= d.type %></div>
+    <div class="meta-line"><span class="k">Total Area:</span> <%= d.totalArea %></div>
+    <div class="meta-line"><span class="k">Purchase Price:</span> <%= money(d.purchasePrice) %></div>
+    <div class="meta-line"><span class="k">First Instalment Payment (&ldquo;Deposit&rdquo;):</span> <%= d.deposit %></div>
+
+    <!-- Purchaser 1 -->
+    <div class="box">
+      <div class="box-grid">
+        <div class="col">
+          <div class="section-title">PURCHASER 1 INFORMATION</div>
+          <div class="field"><span class="lab">Name:</span> <span class="val"><%= d.purchaser1.name %></span></div>
+          <div class="field"><span class="lab">License No. (For legal entities):</span> <span class="val"><%= d.purchaser1.licenseNo %></span></div>
+          <div class="field"><span class="lab">Country of Incorporation:</span> <span class="val"><%= d.purchaser1.countryOfIncorporation %></span></div>
+          <div class="field"><span class="lab">Nationality:</span> <span class="val"><%= d.purchaser1.nationality %></span></div>
+          <div class="field"><span class="lab">Passport No:</span> <span class="val"><%= d.purchaser1.passportNo %></span></div>
+          <div class="field"><span class="lab">P.O. Box / Postal Code:</span> <span class="val"><%= d.purchaser1.poBox %></span></div>
+        </div>
+        <div class="col">
+          <div class="field"><span class="lab">City:</span> <span class="val"><%= d.purchaser1.city %></span></div>
+          <div class="field"><span class="lab">Country:</span> <span class="val"><%= d.purchaser1.country %></span></div>
+          <div class="field"><span class="lab">Address:</span> <span class="val"><%= d.purchaser1.address %></span></div>
+          <div class="field"><span class="lab">Mobile:</span> <span class="val"><%= d.purchaser1.mobile %></span></div>
+          <div class="field"><span class="lab">Telephone:</span> <span class="val"><%= d.purchaser1.telephone %></span></div>
+          <div class="field"><span class="lab">Email:</span> <span class="val"><%= d.purchaser1.email %></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      <span class="note-head">Note and Warning:</span>
+      <%= s.noteAndWarning %>
+    </div>
+
+    <!-- Purchaser 2 -->
+    <div class="box">
+      <div class="box-grid">
+        <div class="col">
+          <div class="section-title">PURCHASER 2 INFORMATION</div>
+          <div class="field empty"><span class="lab">Name:</span> <span class="val"><%= d.purchaser2.name %></span></div>
+          <div class="field empty"><span class="lab">License No. (For legal entities):</span> <span class="val"><%= d.purchaser2.licenseNo %></span></div>
+          <div class="field empty"><span class="lab">Country of Incorporation:</span> <span class="val"><%= d.purchaser2.countryOfIncorporation %></span></div>
+          <div class="field empty"><span class="lab">Nationality:</span> <span class="val"><%= d.purchaser2.nationality %></span></div>
+          <div class="field empty"><span class="lab">Passport No:</span> <span class="val"><%= d.purchaser2.passportNo %></span></div>
+        </div>
+        <div class="col">
+          <div class="field empty"><span class="lab">P.O. Box / Postal Code:</span> <span class="val"><%= d.purchaser2.poBox %></span></div>
+          <div class="field empty"><span class="lab">City:</span> <span class="val"><%= d.purchaser2.city %></span></div>
+          <div class="field empty"><span class="lab">Country:</span> <span class="val"><%= d.purchaser2.country %></span></div>
+          <div class="field empty"><span class="lab">Address:</span> <span class="val"><%= d.purchaser2.address %></span></div>
+          <div class="field empty"><span class="lab">Mobile:</span> <span class="val"><%= d.purchaser2.mobile %></span></div>
+          <div class="field empty"><span class="lab">Telephone:</span> <span class="val"><%= d.purchaser2.telephone %></span></div>
+          <div class="field empty"><span class="lab">Email:</span> <span class="val"><%= d.purchaser2.email %></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 2 ===================== -->
+<section class="page">
+  <% brandBar(); %>
+  <div class="content">
+    <h2 class="ip-head">INSTALLMENT PLAN:</h2>
+    <div class="ip-summary"><span class="k">Discount Percentage:</span> <%= d.discountPercentage %></div>
+    <div class="ip-summary"><span class="k">Discount Value <%= s.currency %>:</span> <%= money(plan.discountValue) %></div>
+    <div class="ip-summary"><span class="k">Net Payable Amount:</span> <%= money(plan.netPayable) %></div>
+
+    <table class="installments">
+      <thead>
+        <tr>
+          <th>INSTALLMENT</th>
+          <th>% OF PURCHASE PRICE</th>
+          <th>AMOUNT (<%= s.currency %>)</th>
+          <th>PAYMENT DATES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% d.installmentSchedule.forEach(function(row){ %>
+        <tr>
+          <td><%= row.label %></td>
+          <td><%= row.percentLabel %></td>
+          <td><%= money(row.amount) %></td>
+          <td><%= row.date %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+    <h2 class="tc-head">TERMS &amp; CONDITIONS:</h2>
+    <ol class="terms">
+      <% s.termsAndConditions.slice(0,4).forEach(function(t){ %>
+        <li><%= t %></li>
+      <% }); %>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== PAGE 3 ===================== -->
+<section class="page">
+  <% brandBar(); %>
+  <div class="content">
+    <ol class="terms" start="5">
+      <% s.termsAndConditions.slice(4).forEach(function(t){ %>
+        <li><%= t %></li>
+      <% }); %>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== PAGE 4 ===================== -->
+<section class="page">
+  <% brandBar(); %>
+  <div class="content">
+    <h2 class="agents-head">AGENTS INFORMATION:</h2>
+    <div class="agents-block">
+      <div class="rule"></div>
+      <div class="ln">Are you being assisted by any of Vendor&rsquo;s registered agents: <%= d.agency.assistedByAgent %></div>
+      <div class="ln">Agency Name: <%= d.agency.name %></div>
+      <div class="ln">Agency Representative&rsquo;s Name: <%= d.agency.representativeName %></div>
+      <div class="ln">Agency Representative&rsquo;s Signature:</div>
+    </div>
+
+    <div class="signatures">
+      <div class="sig"><div class="sig-line"></div><div class="sig-cap">PURCHASER 1 SIGNATURE</div></div>
+      <div class="sig"><div class="sig-line"></div><div class="sig-cap">PURCHASER 2 SIGNATURE</div></div>
+    </div>
+
+    <div class="advisor-line">Sales Advisor Name &amp; Signature (on Behalf of the Vendor) <span class="fill"></span></div>
+
+    <div class="apartment-type">APARTMENT TYPE: <%= d.type %></div>
+
+    <h2 class="bank-head">BANK ACCOUNT DETAILS:</h2>
+
+    <div class="bank-sub">i. FOR BOOKING AND INSTALLMENT PAYMENTS</div>
+    <div class="bank-intro"><%= s.bankAccounts.bookingAndInstallments.intro %></div>
+    <table class="bank">
+      <% s.bankAccounts.bookingAndInstallments.rows.forEach(function(r){ %>
+        <tr><td class="k"><%= r.label %>:</td><td><%= r.value %></td></tr>
+      <% }); %>
+    </table>
+
+    <div class="bank-sub">ii. FOR 4% DLD FEE AND ADMIN FEE</div>
+    <div class="bank-intro"><%= s.bankAccounts.dldAndAdminFee.intro %></div>
+    <table class="bank">
+      <% s.bankAccounts.dldAndAdminFee.rows.forEach(function(r){ %>
+        <tr><td class="k"><%= r.label %>:</td><td><%= r.value %></td></tr>
+      <% }); %>
+    </table>
+  </div>
+</section>
+
+</body>
+</html>
